@@ -133,7 +133,9 @@ const Navbar = () => {
 					{/* A logo a ser exibida depende dos estados 'scrolled' e 'menuOpen' */}
 					<LogoImage
 						src={
-							scrolled && !menuOpen
+							menuOpen
+								? '/img/LogoPretaGrande.png'
+								: scrolled
 								? '/img/LogoPretaGrande.png'
 								: '/img/LogoBrancaGrande.png'
 						}

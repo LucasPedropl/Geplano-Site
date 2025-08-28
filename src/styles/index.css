@@ -1,3 +1,44 @@
-*{
-    margin: 0px;
+/* Importa a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Define a fonte customizada TarunoWide */
+@font-face {
+	font-family: 'TarunoWide';
+	src: url('https://cdn.jsdelivr.net/gh/silviowagner/geplano-fonts/TarunoWide-Bold.woff2')
+			format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/silviowagner/geplano-fonts/TarunoWide-Bold.woff')
+			format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Aplica estilos base para a aplicação */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif; /* Fonte padrão */
+	background-color: #fdfdfd;
+	color: #374151; /* Cor de texto padrão (text-gray-700) */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+
+/* Remove a barra de rolagem, como no protótipo */
+body {
+	scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+/* Define a fonte TarunoWide para títulos, como no protótipo */
+h1,
+h2,
+h3 {
+	font-family: 'TarunoWide', sans-serif;
 }

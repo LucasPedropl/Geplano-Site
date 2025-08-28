@@ -60,7 +60,7 @@ export const LogoLink = styled.a`
 
 // Imagem da logo
 export const LogoImage = styled.img`
-	height: 4rem; /* 64px */
+	height: 2.5rem; /* 40px */
 	transition: all 0.3s ease-in-out;
 
 	@media (min-width: 768px) {
